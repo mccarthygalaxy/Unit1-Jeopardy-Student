@@ -73,8 +73,36 @@ h3 {
 
 input {
     text-align: center;
-    border-radius: 9px 9px;
-    height: 23px;
+    margin-right: 1vw;
+    font-size: 1.5vw;
+    font-weight: 700;
+    border-radius: 12px 12px;
+    height: 3vw;
+}
+
+#typedAnswer {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: orange;    
+    text-shadow: 2px 4px 3px black;
+}
+
+#guessButton {
+    width: 80px;
+    background-color: orange;
+    box-shadow: 4px 5px 8px rgb(49, 45, 45);
+}
+
+#passButton {
+    width: 80px;
+    background-color: orange;
+    box-shadow: 4px 5px 8px rgb(49, 45, 45);
+}
+
+#guessButton:hover, #passButton:hover {
+    background-color: white;
 }
 
 nav {
