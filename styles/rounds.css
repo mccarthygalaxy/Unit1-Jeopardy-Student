@@ -122,12 +122,13 @@ a:visited {
 }
 
 
+
 ul {
     list-style-type: none;
     margin: 40px;
     columns: 1;
     padding-inline-start: 0;
-
+    
 }
 
 .navLi {
@@ -162,8 +163,37 @@ footer {
 }
 
 #footerText {
+    display: inline;
     font-size: 0.7rem;
     font-weight: 100;
     font-family: 'Courier New', Courier, monospace;
     letter-spacing: 2px;    
+}
+
+#footerHome {
+    display: inline;
+    font-size: 0.7rem;
+    font-weight: 100;
+    font-family: 'Courier New', Courier, monospace;
+    margin-left: 10vw;
+    letter-spacing: 2px;    
+}
+
+footer a:link {
+    /* font-weight: normal; */
+    color: white;
+    text-transform: none;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+footer a:visited {
+    /* font-weight: normal; */
+    color: white;
+    text-transform: none;
+}
+
+footer a:hover {
+    /* font-weight: normal; */
+    color: orange;
+    text-transform: none;
 }
