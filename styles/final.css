@@ -66,6 +66,13 @@ header #finalHeader {
     font-size: 4ch;
 }
 
+#finalActual {
+    color: orange;
+    font-size: 4.5ch;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+
 form {
     margin: 20px auto;
 }
