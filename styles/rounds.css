@@ -4,12 +4,12 @@ body {
     text-align: center;
     font-family: Arial, sans-serif;
     background-color: #0077be;
-    color: #ffff00;
+    color: orange;
 }
 
 header {
     background-color: rgb(24, 0, 161);
-    color: #ffff00;
+    color: orange;
     margin: 0;
     padding: 10px 0 10px 0;  
     font-size: 1.4vw;
@@ -35,6 +35,8 @@ h3 {
     /* width: 40vw; */
     grid-template-columns: repeat(6, 1fr);
     grid-auto-rows: 9vw;
+    row-gap: 0.5ch;
+    column-gap: 0.5ch;
     background-color: #0077be;
     margin: 10px auto ;
     padding-bottom: 20px;
@@ -48,12 +50,13 @@ h3 {
     width: 10vw;
     height: 5vw;
     font-size: 3.6vw;
-    font-weight: 200;
+    font-weight: 600;
     text-align: center;
     justify-content: space-around;
     overflow: hidden;
     background-color: rgb(24, 0, 161);
     border: 3px solid black;
+    box-shadow: 4px 6px 17px rgb(248, 246, 246);
     border-radius: 12px 12px;    
 }
 
@@ -121,8 +124,6 @@ a:visited {
     color: black
 }
 
-
-
 ul {
     list-style-type: none;
     margin: 40px;
@@ -148,6 +149,29 @@ ul {
 
 .navLi:active {
     background-color: #ffff00;
+}
+
+    /* Scoreboard Section */
+
+#scoreSection {
+    margin-top: 30px;
+    margin-bottom: 100px;
+}
+
+.playerScore {
+    display: inline;
+    color: black;
+    font-weight: 700;
+    background-color: rgb(138, 198, 221);
+    border: 2px solid black;
+    border-radius: 14px 14px;
+    box-shadow: 4px 7px 11px rgb(49, 45, 45);
+    padding: 1.4vw 2vw;
+    margin: 9vw;
+}
+
+.playerScore:hover {
+    background-color: white;
 }
 
 footer {
