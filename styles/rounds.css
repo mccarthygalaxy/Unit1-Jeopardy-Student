@@ -18,6 +18,8 @@ header {
     border-bottom: 3px solid black;
 }
 
+    /* ------------------- Grid and Game Section ---------------------*/
+
 h1,h4 {
     margin: 0;
     padding: 0;
@@ -74,6 +76,8 @@ h3 {
     background-color: rebeccapurple;
 }
 
+    /* ------------------- Player Input Section ---------------------*/
+
 input {
     text-align: center;
     margin-right: 1vw;
@@ -107,6 +111,8 @@ input {
 #guessButton:hover, #passButton:hover {
     background-color: white;
 }
+
+    /* ------------------- Navigation Section ---------------------*/
 
 nav {
     padding: 8px 0 10px 0;
@@ -151,7 +157,7 @@ ul {
     background-color: #ffff00;
 }
 
-    /* Scoreboard Section */
+    /* ------------------- Scoreboard Section ---------------------*/
 
 #scoreSection {
     margin-top: 30px;
@@ -174,6 +180,8 @@ ul {
     background-color: white;
 }
 
+    /* ------------------- Footer Section ---------------------*/
+
 footer {
     background-color: rgb(24, 0, 161);
     color: #ffff00;
@@ -193,6 +201,8 @@ footer {
     font-family: 'Courier New', Courier, monospace;
     letter-spacing: 2px;    
 }
+
+    /* ------------------- Footer > Link to Home Section ---------------------*/
 
 #footerHome {
     display: inline;
