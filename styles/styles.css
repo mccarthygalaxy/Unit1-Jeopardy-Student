@@ -4,12 +4,12 @@ body {
     text-align: center;
     font-family: Arial, sans-serif;
     background-color: #0077be;
-    color: #ffff00;
+    color: orange;
 }
 
 header {
     background-color: rgb(24, 0, 161);
-    color: #ffff00;
+    color: orange;
     margin: 0;
     padding: 10px 0 10px 0;  
     font-size: 1.4vw;
@@ -31,7 +31,6 @@ header {
     margin-top: 6vh;
     border-radius: 12px 12px;
     box-shadow: 7px 10px 22px rgb(29, 26, 26);
-
 }
 
 #playButton button {
@@ -47,7 +46,9 @@ header {
     border-radius: 12px 12px;
     border: 0;
     box-shadow: 5px 8px 10px rgb(49, 45, 45);
+}
 
+    /* TODO - Make buttons look like transparent glass.  */
 
     /* background-image: linear-gradient(orange,rgb(224, 189, 124));
     content: '';
@@ -57,7 +58,7 @@ header {
     width: calc(100% - 4px);
     height 50%
     background: linear-gradient(rgba(255,255,255,0.8), rgba(255,255,255,0.2)); */
-}
+
 
 #playButton button:hover {
     background-color: white;
@@ -67,9 +68,9 @@ header {
     background-color: #ffff00;
 }
 
-footer {
+/* footer {
     background-color: rgb(24, 0, 161);
-    color: #ffff00;
+    color: orange;
     border-top: 3px solid black;
     padding: 10px;
     text-align: inherit;
@@ -77,4 +78,54 @@ footer {
     bottom: 0;
     left: 0;
     right: 0;
+} */
+
+/* ------------------- Footer Section ---------------------*/
+
+footer {
+    background-color: rgb(24, 0, 161);
+    color: orange;
+    border-top: 3px solid black;
+    padding: 10px;
+    text-align: inherit;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+#footerText {
+    display: inline;
+    font-size: 1.2ch;
+    font-weight: 100;
+    font-family: 'Courier New', Courier, monospace;
+    letter-spacing: 2px;    
+}
+
+/* ------------------- Footer > Link to Home Section ---------------------*/
+
+#footerHome {
+    display: inline;
+    font-size: 1.2ch;
+    font-weight: 100;
+    font-family: 'Courier New', Courier, monospace;
+    margin-left: 10vw;
+    letter-spacing: 2px;    
+}
+
+footer a:link {
+    color: white;
+    text-decoration: none;
+    text-transform: none;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+footer a:visited {
+    color: white;
+    text-transform: none;
+}
+
+footer a:hover {
+    color: orange;
+    text-transform: none;
 }

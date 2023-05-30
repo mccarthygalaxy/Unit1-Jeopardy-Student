@@ -7,112 +7,88 @@ body {
     color: orange;
 }
 
-header {
+header #finalHeader {
     background-color: rgb(24, 0, 161);
     color: orange;
     margin: 0;
-    padding: 10px 0 10px 0;  
-    font-size: 1.4vw;
+    padding: 2px 0 2px 0;  
+    font-size:large;
     text-align: center;
     text-transform: uppercase;
     border-bottom: 3px solid black;
 }
 
-    /* ------------------- Grid and Game Section ---------------------*/
+    /* ------------------- Grid && Flex Section ---------------------*/
 
-h1,h4 {
-    margin: 0;
-    padding: 0;
-}
 
-h3 {
-    margin: 0;
-    padding: 0.5rem 0 0 0;
-}
-
-.grid-container {
+#finalGrid {
     display: grid;
+    max-width: 1200px;
+    margin: auto;
+    grid-auto-rows: repeat 6 1fr;
+    row-gap: 10px;
     justify-content: center;
-    /* align-items: center; */
-    /* width: 40vw; */
-    grid-template-columns: repeat(6, 1fr);
-    grid-auto-rows: 9vw;
-    row-gap: 0.5ch;
-    column-gap: 0.5ch;
-    background-color: #0077be;
-    margin: 10px auto ;
-    padding-bottom: 20px;
-    max-width: 400px;
-    /* gap: auto; */
 }
 
-.grid-item {
-    padding: 1.5vw 1.9vw;
+#jeopardyLogoImg {
+    width: 300px;
+    height: auto;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    border-radius: 12px 12px;
+    box-shadow: 7px 10px 22px rgb(29, 26, 26);
+}
+
+.finalCategory {
+    display: flex;
+    padding: 7px 3px;
     margin: 3px;
-    width: 10vw;
-    height: 5vw;
-    font-size: 3.6vw;
+    width: 400px;
+    height: 4vw;
+    font-size: 3ch;
     font-weight: 600;
     text-align: center;
-    justify-content: space-around;
+    align-items: center;
+    justify-content: center;
+    justify-self: center;
+    align-self: center;
     overflow: hidden;
     background-color: rgb(24, 0, 161);
+    border-radius: 12px 12px;    
     border: 3px solid black;
     box-shadow: 4px 6px 17px rgb(248, 246, 246);
-    border-radius: 12px 12px;    
 }
 
-.category {
-    font-size: 2.1vw;
+/* ------------------- Final Input Section ---------------------*/
+
+#finalHeading {
     color: white;
-    text-align: center;
+    font-size: 4ch;
 }
 
-.question:hover {
-    background-color: rgb(70, 180, 120);
+form {
+    margin: 20px auto;
 }
 
-.category:hover {
-    background-color: rebeccapurple;
+#finalWager,#finalAnswer {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2.2ch;
+    font-weight: 600;
+    color: black;
+    text-transform: uppercase;
 }
-
-    /* ------------------- Player Input Section ---------------------*/
 
 input {
     text-align: center;
+    padding: 0 3ch;
     margin-right: 1vw;
-    font-size: 1.5vw;
+    font-size: 1ch;
     font-weight: 700;
     border-radius: 12px 12px;
     height: 3vw;
 }
 
-#typedAnswer {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: 700;
-    letter-spacing: 3px;
-    text-transform: uppercase;
-    color: orange;    
-    text-shadow: 2px 4px 3px black;
-}
-
-#guessButton {
-    width: 80px;
-    background-color: orange;
-    box-shadow: 4px 5px 8px rgb(49, 45, 45);
-}
-
-#passButton {
-    width: 80px;
-    background-color: orange;
-    box-shadow: 4px 5px 8px rgb(49, 45, 45);
-}
-
-#guessButton:hover, #passButton:hover {
-    background-color: white;
-}
-
-    /* ------------------- Navigation Section ---------------------*/
+/* ------------------- Navigation Section ---------------------*/
 
 nav {
     padding: 8px 0 10px 0;
@@ -121,7 +97,7 @@ nav {
 a:link {
     text-decoration: none;
     color: black;
-    font-size: 2vw;
+    font-size: 2ch;
     font-weight: 750;
     text-transform: uppercase;
 }
@@ -132,7 +108,7 @@ a:visited {
 
 ul {
     list-style-type: none;
-    margin: 40px;
+    margin: 20px auto;
     columns: 1;
     padding-inline-start: 0;
     
@@ -140,8 +116,8 @@ ul {
 
 .navLi {
     display: inline;
-    margin: 10px;
-    padding: 14px 12px;
+    margin: 5px;
+    padding: 10px 12px;
     border-radius: 7px 7px;
     background-color: orange;
     border-radius: 12px 12px;
@@ -157,15 +133,15 @@ ul {
     background-color: #ffff00;
 }
 
-    /* ------------------- Scoreboard Section ---------------------*/
+/* ------------------- Scoreboard Section ---------------------*/
 
 #scoreSection {
-    margin-top: 10px;
-    margin-bottom: 80px;
+    margin: 2.5vh auto;
 }
 
 .playerScore {
     display: inline;
+    font-size: 1.7ch;
     color: black;
     font-weight: 700;
     background-color: rgb(138, 198, 221);
@@ -173,14 +149,14 @@ ul {
     border-radius: 14px 14px;
     box-shadow: 4px 7px 11px rgb(49, 45, 45);
     padding: 1.4vw 2vw;
-    margin: 0 5vw;
+    margin: 7vw;
 }
 
 .playerScore:hover {
     background-color: white;
 }
 
-    /* ------------------- Footer Section ---------------------*/
+/* ------------------- Footer Section ---------------------*/
 
 footer {
     background-color: rgb(24, 0, 161);
@@ -196,7 +172,7 @@ footer {
 
 #footerText {
     display: inline;
-    font-size: 1.2ch;
+    font-size: 0.7rem;
     font-weight: 100;
     font-family: 'Courier New', Courier, monospace;
     letter-spacing: 2px;    
@@ -206,7 +182,7 @@ footer {
 
 #footerHome {
     display: inline;
-    font-size: 1.2ch;
+    font-size: 0.7rem;
     font-weight: 100;
     font-family: 'Courier New', Courier, monospace;
     margin-left: 10vw;
